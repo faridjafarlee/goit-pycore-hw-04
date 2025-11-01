@@ -18,8 +18,8 @@ def total_salary(path):
         if count == 0:
             return (0, 0)
         
-        average = int(total / count)
-        return (int(total), average)
+        average = total / count
+        return (total, average)
     
     except FileNotFoundError:
         print(f"Файл '{path}' не знайдено.")
